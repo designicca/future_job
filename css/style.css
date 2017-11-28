@@ -94,27 +94,28 @@ header {
       display: inline-block; }
       /* line 103, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       header .container .left a {
-        display: inline-block; }
-        /* line 105, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        display: inline-block;
+        text-decoration: none; }
+        /* line 106, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         header .container .left a img {
           vertical-align: middle; }
-        /* line 109, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        /* line 110, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         header .container .left a img:nth-child(1) {
           width: 50px; }
-        /* line 112, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        /* line 113, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         header .container .left a img:nth-child(2) {
           margin-left: 10px;
           width: 96px; }
-    /* line 118, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 119, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     header .container .nav {
       display: inline-block;
       float: right; }
-      /* line 121, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 122, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       header .container .nav .trigger {
         position: relative;
         z-index: 3;
         cursor: pointer; }
-      /* line 127, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 128, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       header .container .nav .menu {
         background: rgba(0, 0, 0, 0.85);
         background-color: white;
@@ -129,26 +130,26 @@ header {
         z-index: 2;
         overflow-y: scroll;
         padding-bottom: 100px; }
-        /* line 141, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        /* line 142, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         header .container .nav .menu ul {
           width: 100%; }
-          /* line 143, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+          /* line 144, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
           header .container .nav .menu ul li {
             height: 150px;
             line-height: 150px;
             display: block;
             overflow: hidden; }
-            /* line 151, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+            /* line 152, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
             header .container .nav .menu ul li a {
               text-decoration: none;
               display: block; }
-              /* line 154, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+              /* line 155, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
               header .container .nav .menu ul li a .container {
                 width: 1140px;
                 margin: 0 auto;
                 border-bottom: 1px solid #ddd;
                 height: 150px; }
-                /* line 160, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+                /* line 161, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
                 header .container .nav .menu ul li a .container .num {
                   display: inline-block;
                   font-size: 40px;
@@ -157,13 +158,13 @@ header {
                   font-weight: 100;
                   letter-spacing: -2px;
                   margin-left: 15px; }
-                /* line 170, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+                /* line 171, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
                 header .container .nav .menu ul li a .container .title {
                   display: inline-block;
                   color: #000;
                   font-size: 1.2rem;
                   margin-left: 20px; }
-                  /* line 175, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+                  /* line 176, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
                   header .container .nav .menu ul li a .container .title span.tag {
                     font-size: 0.7rem;
                     border: 1px solid #FF2570;
@@ -175,7 +176,7 @@ header {
                     position: relative;
                     bottom: 2px;
                     margin: 0 0 0 15px; }
-                /* line 188, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+                /* line 189, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
                 header .container .nav .menu ul li a .container .thumbnail {
                   position: relative;
                   display: inline-block;
@@ -183,7 +184,7 @@ header {
                   height: 150px;
                   width: 150px;
                   overflow: hidden; }
-                  /* line 195, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+                  /* line 196, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
                   header .container .nav .menu ul li a .container .thumbnail img {
                     height: 150px;
                     position: absolute;
@@ -192,21 +193,21 @@ header {
                     bottom: auto;
                     left: 50%;
                     transform: translate3d(-50%, -50%, 0); }
-                /* line 206, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+                /* line 207, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
                 header .container .nav .menu ul li a .container:hover {
                   background-color: #f1f1f1; }
 
-/* line 219, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+/* line 220, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
 .main_contianer {
   position: relative; }
-  /* line 222, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 223, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .main_contianer .carousel .carousel-control-prev, .main_contianer .carousel .carousel-control-next {
     width: 15%;
     opacity: 0.7; }
-    /* line 226, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 227, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .main_contianer .carousel .carousel-control-prev:hover, .main_contianer .carousel .carousel-control-next:hover {
       opacity: 1; }
-  /* line 230, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 231, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .main_contianer .carousel .carousel-indicators {
     width: 930px;
     justify-content: left;
@@ -216,7 +217,7 @@ header {
     left: 50%;
     transform: translate3d(-50%, 0, 0);
     margin: 0; }
-    /* line 241, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 242, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .main_contianer .carousel .carousel-indicators li {
       width: 40px;
       height: 55px;
@@ -225,23 +226,24 @@ header {
       margin: 0 30px 0 0;
       text-align: center;
       background-color: rgba(255, 255, 255, 0);
-      cursor: pointer; }
-      /* line 251, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      cursor: pointer;
+      z-index: 1; }
+      /* line 252, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .main_contianer .carousel .carousel-indicators li .num {
         font-family: 'Barlow Semi Condensed', sans-serif;
         font-size: 2.4rem;
         color: rgba(255, 255, 255, 0.6); }
-    /* line 258, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 259, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .main_contianer .carousel .carousel-indicators .active {
       border-bottom: 3px solid #FF2570; }
-      /* line 261, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 262, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .main_contianer .carousel .carousel-indicators .active span {
         color: white; }
-  /* line 268, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 269, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item {
     background-color: #eee;
     height: 100vh; }
-    /* line 271, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 272, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .main_contianer .carousel .carousel-inner .carousel-item .contents_common {
       width: 930px;
       margin: 0 auto;
@@ -252,7 +254,7 @@ header {
       bottom: auto;
       transform: translate3d(-50%, -50%, 0);
       display: inline-block; }
-      /* line 283, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 284, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .main_contianer .carousel .carousel-inner .carousel-item .contents_common h1 {
         font-size: 2.2rem;
         font-weight: 700;
@@ -260,7 +262,7 @@ header {
         color: white;
         display: inline-block;
         vertical-align: middle; }
-      /* line 291, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 292, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .main_contianer .carousel .carousel-inner .carousel-item .contents_common h5 {
         color: #FF2570;
         font-size: 0.8rem;
@@ -270,14 +272,14 @@ header {
         border-radius: 20px;
         margin-top: 15px;
         margin-left: 20px; }
-      /* line 301, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 302, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .main_contianer .carousel .carousel-inner .carousel-item .contents_common p {
         font-size: 1.1rem;
         line-height: 32px;
         margin: 40px 0 0;
         color: rgba(255, 255, 255, 0.9);
         font-weight: 300; }
-    /* line 309, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 310, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .main_contianer .carousel .carousel-inner .carousel-item .more {
       text-align: center;
       display: inline-block;
@@ -287,77 +289,77 @@ header {
       bottom: 5%;
       transform: translate3d(-50%, 0, 0);
       cursor: pointer; }
-      /* line 319, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 320, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .main_contianer .carousel .carousel-inner .carousel-item .more a {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.6); }
-        /* line 322, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        /* line 323, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         .main_contianer .carousel .carousel-inner .carousel-item .more a img {
           padding-top: 10px;
           opacity: 0.7; }
-      /* line 329, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 330, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .main_contianer .carousel .carousel-inner .carousel-item .more:hover a {
         color: white; }
-        /* line 331, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        /* line 332, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         .main_contianer .carousel .carousel-inner .carousel-item .more:hover a img {
           opacity: 1; }
-  /* line 339, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 340, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .main_banner_bg_common, .main_contianer .carousel .carousel-inner .carousel-item-01, .main_contianer .carousel .carousel-inner .carousel-item-02, .main_contianer .carousel .carousel-inner .carousel-item-03, .main_contianer .carousel .carousel-inner .carousel-item-04, .main_contianer .carousel .carousel-inner .carousel-item-05, .main_contianer .carousel .carousel-inner .carousel-item-06 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
-  /* line 345, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 346, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-01 {
     background-image: url(../img/main_banner_01.jpg); }
-  /* line 349, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 350, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-02 {
     background-image: url(../img/main_banner_02.jpg); }
-  /* line 353, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 354, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-03 {
     background-image: url(../img/main_banner_03.jpg); }
-  /* line 357, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 358, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-04 {
     background-image: url(../img/main_banner_01.jpg); }
-  /* line 361, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 362, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-05 {
     background-image: url(../img/main_banner_02.jpg); }
-  /* line 365, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 366, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-06 {
     background-image: url(../img/main_banner_03.jpg); }
 
 /* detail page */
-/* line 378, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+/* line 379, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
 .detail_contents {
   margin-top: 100px; }
-  /* line 380, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 381, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .detail_contents .banner {
     height: 450px;
     background-image: url(../img/detail_banner.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover; }
-    /* line 386, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 387, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .detail_contents .banner .container {
       padding: 60px 0;
       position: relative;
       height: 450px; }
-  /* line 393, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 394, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   .detail_contents .section .container {
     width: 1140px;
     margin: 0 auto; }
-    /* line 396, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 397, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .detail_contents .section .container .num {
       display: inline-block;
       border-bottom: 4px solid #FF2570;
       font-size: 2.2rem;
       font-weight: 700;
       padding-bottom: 6px; }
-    /* line 403, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 404, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .detail_contents .section .container .title {
       font-size: 2.3rem;
       font-weight: 700;
       margin: 100px 0 20px; }
-    /* line 408, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 409, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .detail_contents .section .container .tag {
       display: inline-block;
       color: #FF2570;
@@ -365,18 +367,18 @@ header {
       border-radius: 20px;
       padding: 6px 10px;
       font-size: 0.8rem; }
-    /* line 416, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 417, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .detail_contents .section .container .date {
       font-size: 0.9rem;
       display: inline-block;
       margin-left: 10px; }
-    /* line 421, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 422, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .detail_contents .section .container .link_area {
       text-align: right;
       position: absolute;
       bottom: 60px;
       right: 0; }
-      /* line 426, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 427, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .detail_contents .section .container .link_area .subscription {
         display: inline-block;
         font-size: 1rem;
@@ -388,37 +390,37 @@ header {
         margin-right: 25px;
         border-radius: 20px;
         cursor: pointer; }
-        /* line 438, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        /* line 439, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         .detail_contents .section .container .link_area .subscription:hover {
           background-color: #000;
           color: #fff; }
-      /* line 443, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 444, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .detail_contents .section .container .link_area a {
         display: inline-block; }
-        /* line 445, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        /* line 446, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         .detail_contents .section .container .link_area a img {
           vertical-align: middle; }
-    /* line 450, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 451, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .detail_contents .section .container .contents {
       line-height: 30px;
       font-size: 1rem;
       color: #000;
       margin: 50px 0; }
-    /* line 456, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 457, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     .detail_contents .section .container .good_btn_area {
       text-align: center;
       margin: 100px auto; }
-      /* line 459, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 460, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .detail_contents .section .container .good_btn_area h5 {
         font-size: 0.9rem;
         color: #000; }
-      /* line 463, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 464, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .detail_contents .section .container .good_btn_area .icon {
         margin: 40px 0; }
-        /* line 465, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        /* line 466, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         .detail_contents .section .container .good_btn_area .icon img {
           margin: 0 20px; }
-      /* line 469, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 470, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .detail_contents .section .container .good_btn_area button {
         padding: 12px 25px;
         border-radius: 30px;
@@ -429,37 +431,37 @@ header {
         color: #000;
         font-size: 1rem;
         cursor: pointer; }
-        /* line 480, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        /* line 481, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         .detail_contents .section .container .good_btn_area button:hover {
           background-color: #000;
           color: white; }
-      /* line 485, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 486, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       .detail_contents .section .container .good_btn_area button.left {
         border: 2px solid #FF2570;
         color: #FF2570; }
-        /* line 489, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+        /* line 490, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
         .detail_contents .section .container .good_btn_area button.left:hover {
           background-color: #FF2570;
           color: white; }
 
-/* line 500, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+/* line 501, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
 footer {
   background-color: #f1f1f1;
   height: 70px;
   line-height: 70px; }
-  /* line 504, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+  /* line 505, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
   footer .container {
     width: 1140px;
     margin: 0 auto; }
-    /* line 507, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 508, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     footer .container h5 {
       display: inline-block;
       font-size: 0.9rem; }
-    /* line 511, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+    /* line 512, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
     footer .container a {
       display: inline-block;
       float: right; }
-      /* line 514, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
+      /* line 515, /Users/songseyeong/Documents/GitHub/future_job/css/style.scss */
       footer .container a img {
         vertical-align: middle; }
 
