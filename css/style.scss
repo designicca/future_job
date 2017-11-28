@@ -81,11 +81,13 @@ $transition2: all 0.2s ease-out;
     //bottom: 0;
 }
 
-
+.detail_header {
+    background-color: white;
+}
 header {
     height: 100px;
     line-height: 100px;
-    background-color: #fff;
+    //background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
@@ -215,20 +217,126 @@ header {
 .main_contianer {
     position: relative;
     .carousel {
-        //position: absolute;
-        //top: 0;
-        //left: 0;
-        //right: 0;
-        //bottom: 0;
+        .carousel-control-prev, .carousel-control-next {
+            width: 15%;
+            opacity: 0.7;
+            @extend .transition2_pack;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .carousel-indicators {
+            width: 930px;
+            justify-content: left;
+            top: 20%;
+            bottom: auto;
+            right: 0;
+            left: 50%;
+            transform: translate3d(-50%, 0, 0);
+            margin: 0;
+            @extend .transition2_pack;
+            li {
+                width: 40px;
+                height: 55px;
+                line-height: 50px;
+                text-indent: 0;
+                margin: 0 30px 0 0;
+                text-align: center;
+                background-color: rgba(255,255,255,0);
+                cursor: pointer;
+                
+                span {
+                    font-size: 2.4rem;
+                    letter-spacing: -3px;
+                    color: rgba(255,255,255,0.6);
+                }
+            }
+            .active {
+                border-bottom: 3px solid $main_color;
+                
+                span {
+                    color: rgba(255,255,255,1);
+                }
+            }
+        }
         .carousel-inner {
             //height: 100%;
             .carousel-item {
-                background-color: #f1f1f1;
+                background-color: #eee;
                 height: 100vh;
                 .contents_common {
-                    width: 1140px;
+                    width: 930px;
+                    //height: 250px;
                     margin: 0 auto;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    right: auto;
+                    bottom: auto;
+                    transform: translate3d(-50%, -50%, 0);
+                    display: inline-block;
+                    .empty {
+                        //height: 55px;
+                        //background-color: rgba(255,255,255,0.5);
+                        width: 100%;
+                    }
+                    h1 {
+                        font-size: 2.2rem;
+                        font-weight: 700;  
+                        line-height: 2.5rem;
+                        color: white;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    h5 {
+                        color: $main_color;
+                        font-size: 0.8rem;
+                        padding: 6px 10px;
+                        border: 1px solid $main_color;
+                        display: inline-block;
+                        border-radius: 20px;
+                        margin-top: 15px;
+                        margin-left: 20px;
+                    }
+                    p {
+                        font-size: 1.1rem;
+                        line-height: 32px;
+                        margin: 40px 0 0;
+                        color: rgba(255,255,255,0.9);
+                        font-weight: 300;
+                    }
                 }
+            }
+            
+            .main_banner_bg_common {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            
+            .carousel-item-01 {
+                @extend .main_banner_bg_common;
+                background-image: url(../img/main_banner_01.jpg);
+            }
+            .carousel-item-02 {
+                @extend .main_banner_bg_common;
+                background-image: url(../img/main_banner_02.jpg);
+            }
+            .carousel-item-03 {
+                @extend .main_banner_bg_common;
+                background-image: url(../img/main_banner_03.jpg);
+            }
+            .carousel-item-04 {
+                @extend .main_banner_bg_common;
+                background-image: url(../img/main_banner_01.jpg);
+            }
+            .carousel-item-05 {
+                @extend .main_banner_bg_common;
+                background-image: url(../img/main_banner_02.jpg);
+            }
+            .carousel-item-06 {
+                @extend .main_banner_bg_common;
+                background-image: url(../img/main_banner_03.jpg);
             }
         }
     }
