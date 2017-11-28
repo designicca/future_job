@@ -1,0 +1,362 @@
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, 
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1rem;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    border-radius: 0;
+    font-weight:normal;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* RESET END */
+
+
+$main_color: #FF2570;
+$main_black: #000;
+
+$transition3: all 0.3s ease-out;
+$transition2: all 0.2s ease-out;
+
+.transition2_pack {
+    -webkit-transition: $transition2;
+       -moz-transition: $transition2;
+         -o-transition: $transition2;
+            transition: $transition2;
+}
+
+.transition3_pack {
+    -webkit-transition: $transition3;
+       -moz-transition: $transition3;
+         -o-transition: $transition3;
+            transition: $transition3;
+}
+
+
+::selection {
+  background: #FF2570;
+  color: white;
+  text-shadow: none;
+}
+
+::-webkit-scrollbar {
+    //position: absolute;
+    //right: 0;
+    //top: 0;
+    //bottom: 0;
+}
+
+
+header {
+    height: 100px;
+    line-height: 100px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+        .left {
+            display: inline-block;
+            a {
+                display: inline-block;
+                img {
+                    vertical-align: middle;
+
+                }
+                img:nth-child(1) {
+                    width: 50px;
+                }
+                img:nth-child(2) {
+                    margin-left: 10px;
+                    width: 96px;
+                }
+            }
+        }
+        .nav {
+            display: inline-block;
+            float: right;
+            .trigger {
+                position: relative;
+                z-index: 3;
+                cursor: pointer;
+            }
+
+            .menu {
+                background: rgba(0, 0, 0, 0.85);
+                background-color: white;
+                border-top: 1px solid #ddd;
+                height: 100%;
+                position: fixed;
+                top: 100px;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: none;
+                z-index: 2;
+                overflow-y: scroll;
+                padding-bottom: 100px;
+                ul {
+                    width: 100%;
+                    li {
+                        $menu_height: 150px;
+                        //height: 15vh;
+                        //line-height: 15vh;
+                        height: $menu_height;
+                        line-height: $menu_height;
+                        display: block;
+                        overflow: hidden;
+                        a {
+                            text-decoration: none;
+                            display: block;
+                            .container {
+                                width: 1140px;
+                                margin: 0 auto;
+                                border-bottom: 1px solid #ddd;
+                                height: $menu_height;
+                                @extend .transition2_pack;
+                                .num {
+                                    //line-height: 22px;
+                                    display: inline-block;
+                                    font-size: 40px;
+                                    vertical-align: middle;
+                                    color: #444;
+                                    font-weight: 100;
+                                    letter-spacing: -2px;
+                                    margin-left: 15px;
+                                }
+                                .title {
+                                    display: inline-block;
+                                    color: $main_black;
+                                    font-size: 1.2rem;
+                                    margin-left: 20px;
+                                    span.tag {
+                                        font-size: 0.7rem;
+                                        border: 1px solid $main_color;
+                                        color: $main_color;
+                                        padding: 4px 10px;
+                                        border-radius: 15px;
+                                        letter-spacing: 0;
+                                        vertical-align: middle;
+                                        position: relative;
+                                        bottom: 2px;
+                                        margin: 0 0 0 15px;
+                                    }
+                                }
+                                .thumbnail {
+                                    position: relative;
+                                    display: inline-block;
+                                    float: right;
+                                    height: $menu_height;
+                                    width: $menu_height;
+                                    overflow: hidden;
+                                    img {
+                                        height: $menu_height;
+                                        position: absolute;
+                                        top: 50%;
+
+                                        right: auto;
+                                        bottom: auto;
+                                        left: 50%;
+                                        transform: translate3d(-50%, -50%, 0);
+                                    }
+                                }
+                                &:hover {
+                                    background-color: #f1f1f1;
+                                }
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* detail page */
+.detail_contents {
+    margin-top: 100px;
+    .banner {
+        height: 450px;
+        background-image: url(../img/detail_banner.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .container {
+            padding: 60px 0;
+            position: relative;
+            height: 450px;
+        }
+    }
+    .section {
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+            .num {
+                display: inline-block;
+                border-bottom: 4px solid $main-color;
+                font-size: 2.2rem;
+                font-weight: 700;
+                padding-bottom: 6px;
+            }
+            .title {
+                font-size: 2.3rem;
+                font-weight: 700;
+                margin: 100px 0 20px; 
+            }
+            .tag {
+                display: inline-block;
+                color: #FF2570;
+                border: 1px solid #FF2570;
+                border-radius: 20px;
+                padding: 6px 10px;
+                font-size: 0.8rem;
+            }
+            .date {
+                font-size: 0.9rem;
+                display: inline-block;
+                margin-left: 10px;
+            }
+            .link_area {
+                text-align: right;
+                position: absolute;
+                bottom: 60px;
+                right: 0;
+                .subscription {
+                    display: inline-block;
+                    font-size: 1rem;
+                    padding: 10px 20px;
+                    border: 2px solid $main_black;
+                    background: 0;
+                    line-height: inherit;
+                    vertical-align: middle;
+                    margin-right: 25px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    @extend .transition2_pack;
+                    &:hover {
+                        background-color: $main_black;
+                        color: #fff;
+                    }
+                }
+                a {
+                    display: inline-block;
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+            }
+            .contents {
+                line-height: 30px;
+                font-size: 1rem;
+                color: $main_black;
+                margin: 50px 0;
+            }
+            .good_btn_area{
+                text-align: center;
+                margin: 100px auto;
+                h5 {
+                    font-size: 0.9rem;
+                    color: $main-black;
+                }
+                .icon {
+                    margin: 40px 0;
+                    img {
+                        margin: 0 20px;    
+                    }
+                }
+                button {
+                    padding: 12px 25px;
+                    border-radius: 30px;
+                    margin: 0 10px;
+                    outline: none;
+                    background-color: white;
+                    border: 2px solid $main_black;
+                    color: $main_black;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    @extend .transition2_pack;
+                    &:hover {
+                        background-color: $main_black;
+                        color: white;
+                    }
+                }
+                button.left {
+                    border: 2px solid $main_color;
+                    color: $main_color;
+                    @extend .transition2_pack;
+                    &:hover {
+                        background-color: $main_color;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: #f1f1f1;
+    height: 70px;
+    line-height: 70px;
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+        h5 {
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+        a {
+            display: inline-block;
+            float: right;
+            img {
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+
+
+
+
+
