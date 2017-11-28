@@ -211,6 +211,33 @@ header {
     }
 }
 
+
+.main_contianer {
+    position: relative;
+    .carousel {
+        //position: absolute;
+        //top: 0;
+        //left: 0;
+        //right: 0;
+        //bottom: 0;
+        .carousel-inner {
+            //height: 100%;
+            .carousel-item {
+                background-color: #f1f1f1;
+                height: 100vh;
+                .contents_common {
+                    width: 1140px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
 /* detail page */
 .detail_contents {
     margin-top: 100px;

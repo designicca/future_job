@@ -1,4 +1,4 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -6,10 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Future Job</title>
         <link rel="shortcut icon" type="image/png" href="img/shortcut.png">
-        <link rel="stylesheet" href="css/style.css">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
+        <!-- <header class="">
             <div class="container">
                 <div class="left">
                     <a href="#none">
@@ -101,15 +111,46 @@
                     </div>
                 </div>
             </div>
-        </header>        
-        <h1>sample text</h1>
-        <footer>
-            <div class="container">
-                <h5>© 2017 Future-Job All rights reserved</h5>
-                <a href="#"><img src="img/top_btn.svg" alt="top button"></a>
+        </header>  -->       
+        <div class="main_contianer">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">1</li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1">2</li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2">3</li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="contents_common">
+                            <h1>4차 산업준비를 위한 게임 AR 전문가</h1>
+                            <h5>인터뷰</h5>
+                            <p>스마티빌딩, 스마트팩토리 등은 각종 물리적 기계들과 에너지 전력망, 그리고 이들을 제어하는 컴퓨터 등이 하나로 연결되는 통합 시스템이다. 이런 통합 환경 구축에 강점을 가진 글로벌 기업 PTC 최고기술책임자(CTO) 앤드루 팀은 매일경제와 단독 인터뷰했다.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="contents_common">
+                            <h1>머신러닝 machine learning</h1>
+                            <p>컴퓨터가 스스로 방대한 데이터를 분석해서 미래를 예측하는 기술. 머신러닝을 우리말로 옮기면 '기계 학습'이라고 할 수 있는데 이것은 인공 지능을 가능하게 하는 방법</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="contents_common">
+                            <h1>4차 산업준비를 위한 게임 AR 전문가</h1>
+                            <h5>인터뷰</h5>
+                            <p>스마티빌딩, 스마트팩토리 등은 각종 물리적 기계들과 에너지 전력망, 그리고 이들을 제어하는 컴퓨터 등이 하나로 연결되는 통합 시스템이다. 이런 통합 환경 구축에 강점을 가진 글로벌 기업 PTC 최고기술책임자(CTO) 앤드루 팀은 매일경제와 단독 인터뷰했다.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-        </footer>
-        
+        </div>
         
         
         <!-- hamburger menu js -->
