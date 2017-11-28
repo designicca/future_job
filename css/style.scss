@@ -1,4 +1,5 @@
 @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,500,600,700');
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
 pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, 
@@ -22,6 +23,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     line-height: 1;
     font-family: 'NanumSquare', sans-serif;
+    //font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 ol, ul {
@@ -234,6 +236,7 @@ header {
             left: 50%;
             transform: translate3d(-50%, 0, 0);
             margin: 0;
+            
             @extend .transition2_pack;
             li {
                 width: 40px;
@@ -245,9 +248,10 @@ header {
                 background-color: rgba(255,255,255,0);
                 cursor: pointer;
                 
-                span {
+                .num {
+                    font-family: 'Barlow Semi Condensed', sans-serif;
                     font-size: 2.4rem;
-                    letter-spacing: -3px;
+                    //letter-spacing: -3px;
                     color: rgba(255,255,255,0.6);
                 }
             }
