@@ -28,7 +28,7 @@
                     </a>
                 </div>
                 <div class="nav">               
-                    <div class="trigger" data-toggle="modal" data-target="#exampleModal">
+                    <div class="trigger" data-toggle="modal" data-target="#Modal_menu">
                         <img src="img/menu_black.svg" class="menu_common menu_web menu_mobile">
                     </div>
                 </div>
@@ -43,11 +43,12 @@
                     <h5 class="tag">인터뷰</h5>
                     <h5 class="date">2017. 10. 20</h5>
                     <div class="link_area">
-                        <h3 class="subscription">구독하기</h3>
+                        <h3 class="subscription" data-toggle="modal" data-target="#exampleModal">구독하기</h3>
                         <a href="#none"><img src="img/share.svg" alt="share icon"></a>
                     </div>
                 </div>
             </div>
+            
             <div class="section">
                 <div class="container">
                     <p class="contents">
@@ -79,9 +80,9 @@
         
         
         <!-- Menu Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+        <div class="modal fade" id="Modal_menu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-menu" role="document">
+                <div class="modal-content modal-content-menu">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
@@ -182,5 +183,28 @@
             </div>
         </div>
         
+        <!-- 구독하기 Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-subscription" role="document">
+                <div class="modal-content modal-content-subscription">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="">
+                            <h1>미래의 직업은<br>더이상 미래가 아닙니다.</h1>
+                            <h3>퓨처잡에서 다양한 직업들을 스터디 해보세요.</h3>
+                            <div>
+                                <h5>구독받으실 이메일주소를 입력해주세요.</h5>
+                                <input type="email" placeholder="이메일 주소 입력" name="이메일 조수">
+                                <input type="submit" name="입력" value="입력">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
