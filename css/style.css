@@ -539,8 +539,7 @@ footer {
     /* line 592, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog-menu .modal-content-menu {
       border-radius: 0;
-      border: none;
-      height: 100vh; }
+      border: none; }
       /* line 596, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-menu .modal-content-menu .modal_menu_nav {
         display: inline-block;
