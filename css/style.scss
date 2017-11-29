@@ -98,6 +98,7 @@ header {
     .container {
         width: 1140px;
         margin: 0 auto;
+        padding: 0;
         .left {
             display: inline-block;
             a {
@@ -397,9 +398,10 @@ header {
             .num {
                 display: inline-block;
                 border-bottom: 4px solid $main-color;
-                font-size: 2.2rem;
-                font-weight: 700;
+                font-size: 2.4rem;
+                font-weight: 500;
                 padding-bottom: 6px;
+                font-family: 'Barlow Semi Condensed', sans-serif;
             }
             .title {
                 font-size: 2.3rem;
@@ -409,7 +411,7 @@ header {
             .tag {
                 display: inline-block;
                 color: #FF2570;
-                border: 1px solid #FF2570;
+                border: 2px solid #FF2570;
                 border-radius: 20px;
                 padding: 6px 10px;
                 font-size: 0.8rem;
@@ -644,4 +646,7 @@ footer {
     }
 }
 
+.modal-backdrop.show {
+    opacity: 0;
+}
 
