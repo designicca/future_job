@@ -637,8 +637,14 @@ footer {
               /* line 696, /Users/SONG/Desktop/future_job/css/style.scss */
               .modal .modal-dialog .modal-content .modal-body .menu ul li a .container:hover {
                 background-color: #f1f1f1; }
+          /* line 705, /Users/SONG/Desktop/future_job/css/style.scss */
+          .modal .modal-dialog .modal-content .modal-body .menu ul li a:link .container .menu_title .num, .modal .modal-dialog .modal-content .modal-body .menu ul li a:visited .container .menu_title .num, .modal .modal-dialog .modal-content .modal-body .menu ul li a:hover .container .menu_title .num, .modal .modal-dialog .modal-content .modal-body .menu ul li a:active .container .menu_title .num, .modal .modal-dialog .modal-content .modal-body .menu ul li a:hover .container .menu_title .num {
+            color: #444; }
+          /* line 708, /Users/SONG/Desktop/future_job/css/style.scss */
+          .modal .modal-dialog .modal-content .modal-body .menu ul li a:link .container .menu_title .title, .modal .modal-dialog .modal-content .modal-body .menu ul li a:visited .container .menu_title .title, .modal .modal-dialog .modal-content .modal-body .menu ul li a:hover .container .menu_title .title, .modal .modal-dialog .modal-content .modal-body .menu ul li a:active .container .menu_title .title, .modal .modal-dialog .modal-content .modal-body .menu ul li a:hover .container .menu_title .title {
+            color: #000; }
 
-/* line 710, /Users/SONG/Desktop/future_job/css/style.scss */
+/* line 723, /Users/SONG/Desktop/future_job/css/style.scss */
 .modal-backdrop.show {
   opacity: 0; }
 

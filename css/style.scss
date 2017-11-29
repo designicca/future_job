@@ -698,6 +698,19 @@ footer {
                                     }
                                 }
                             }
+
+                            a:link, a:visited, a:hover, a:active, a:hover {
+                                .container {
+                                    .menu_title {
+                                        .num {
+                                            color: #444;
+                                        }
+                                        .title {
+                                            color: $main_black;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
