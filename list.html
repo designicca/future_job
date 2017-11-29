@@ -141,10 +141,23 @@
         <div class="modal fade" id="Modal_menu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-menu" role="document">
                 <div class="modal-content modal-content-menu">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                    <div class="modal_menu_nav">
+                        <div class="modal_container">
+                            <div class="logo_area">
+                                <a href="index.html">
+                                    <img src="img/symbol.svg">
+                                    <img src="img/logo_b.svg">
+                                </a>
+                            </div>
+                            <div class="menu_modal_right">
+                                <div class="subscription_btn" data-toggle="modal" data-target="#Modal_subscription">
+                                    <h3>구독하기</h3>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-body">
                         <div class="menu">
@@ -240,5 +253,37 @@
                 </div>
             </div>
         </div>  
+        
+        <!-- 구독하기 Modal -->
+        <div class="modal fade" id="Modal_subscription" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-subscription" role="document">
+                <div class="modal-content modal-content-subscription">
+                    <div class="modal_nav">
+                        <div class="modal_container">
+                            <div class="logo_area">
+                                <a href="index.html">
+                                    <img src="img/symbol.svg">
+                                    <img src="img/logo_b.svg">
+                                </a>
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="contants">
+                            <h1>미래의 직업은<br>더이상 미래가 아닙니다.</h1>
+                            <h3>퓨처잡에서 다양한 직업들을 스터디 해보세요.</h3>
+                            <div class="input_form">
+                                <h5>구독받으실 이메일주소를 입력해주세요.</h5>
+                                <input type="email" placeholder="이메일 주소 입력" name="이메일 조수">
+                                <input type="submit" name="입력" value="확인">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

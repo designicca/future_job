@@ -586,7 +586,6 @@ footer {
 
 .modal {
     padding: 0 !important;
-    //margin-top: 100px;
     .modal-dialog-menu {
         max-width: 100%;
         margin: 0;
@@ -594,6 +593,66 @@ footer {
             border-radius: 0;
             border: none;
             height: 100vh;
+            .modal_menu_nav {
+                display: inline-block;
+                height: 100px;
+                line-height: 100px;
+                border-bottom: 1px solid #ddd;
+                .modal_container {
+                    width: 1140px;
+                    margin: 0 auto;
+                    .logo_area {
+                        display: inline-block;
+                        a {
+                            text-decoration: none;
+                            img {
+                                vertical-align: middle;
+                            }
+                            img:nth-child(1) {
+                                width: 50px;
+                            }
+                            img:nth-child(2) {
+                                width: 96px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                    .menu_modal_right {
+                        display: inline-block;
+                        float: right;
+                        
+                        .subscription_btn {
+                            display: inline-block;
+                            cursor: pointer;
+                            margin-right: 10px;
+                            h3 {
+                                color: $main_color;
+                                font-size: 1rem;
+                                width: 90px;
+                                height: 35px;
+                                line-height: 35px;
+                                text-align: center;
+                                border: 2px solid $main_color;
+                                border-radius: 20px;
+                            }    
+                        }
+                        .close {
+                            height: 100px;
+                            color: $main_black;
+                            font-size: 2rem;
+                            cursor: pointer;
+                            width: 50px;
+                            text-align: center;
+                            outline: 0;
+                            opacity: 0.7;
+                            @extend .transition2_pack;
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
             .modal-body {
                 padding: 0;
                 width: 1140px;
