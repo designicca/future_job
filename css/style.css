@@ -53,7 +53,7 @@ table {
 
 /* RESET END */
 /* line 58, /Users/SONG/Desktop/future_job/css/style.scss */
-.transition2_pack, header .container .nav .menu ul li a .container, .background_area .container a.start-btn, .main_contianer .carousel .carousel-control-prev, .main_contianer .carousel .carousel-control-next, .main_contianer .carousel .carousel-indicators, .main_contianer .carousel .carousel-inner .carousel-item .more, .detail_contents .section .container .link_area .subscription, .detail_contents .section .container .good_btn_area button, .detail_contents .section .container .good_btn_area button.left, .modal .modal-dialog .modal-content .modal-body .menu ul li a .container {
+.transition2_pack, header .container .nav .menu ul li a .container, .background_area .container_bottom a.start-btn, .main_contianer .carousel .carousel-control-prev, .main_contianer .carousel .carousel-control-next, .main_contianer .carousel .carousel-indicators, .main_contianer .carousel .carousel-inner .carousel-item .more, .detail_contents .section .container .link_area .subscription, .detail_contents .section .container .good_btn_area button, .detail_contents .section .container .good_btn_area button.left, .modal .modal-dialog .modal-content .modal-body .menu ul li a .container {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
@@ -218,14 +218,21 @@ header {
     .background_area .container h1 {
       font-size: 2.5rem;
       font-weight: 700;
-      line-height: 3.5rem; }
+      line-height: 4rem; }
     /* line 240, /Users/SONG/Desktop/future_job/css/style.scss */
     .background_area .container h3 {
       font-size: 1.7rem;
-      margin: 30px 0 120px;
-      line-height: 2.5rem; }
-    /* line 245, /Users/SONG/Desktop/future_job/css/style.scss */
-    .background_area .container a.start-btn {
+      margin: 35px 0;
+      line-height: 3rem; }
+  /* line 246, /Users/SONG/Desktop/future_job/css/style.scss */
+  .background_area .container_bottom {
+    width: 1140px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0); }
+    /* line 252, /Users/SONG/Desktop/future_job/css/style.scss */
+    .background_area .container_bottom a.start-btn {
       text-decoration: none;
       border: 2px solid #FF2570;
       width: 150px;
@@ -239,22 +246,22 @@ header {
       color: #FF2570;
       background-color: white;
       float: right; }
-      /* line 260, /Users/SONG/Desktop/future_job/css/style.scss */
-      .background_area .container a.start-btn:hover {
+      /* line 267, /Users/SONG/Desktop/future_job/css/style.scss */
+      .background_area .container_bottom a.start-btn:hover {
         background-color: #FF2570;
         color: white; }
 
-/* line 269, /Users/SONG/Desktop/future_job/css/style.scss */
+/* line 276, /Users/SONG/Desktop/future_job/css/style.scss */
 .main_contianer {
   position: relative; }
-  /* line 272, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 279, /Users/SONG/Desktop/future_job/css/style.scss */
   .main_contianer .carousel .carousel-control-prev, .main_contianer .carousel .carousel-control-next {
     width: 15%;
     opacity: 0.7; }
-    /* line 276, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 283, /Users/SONG/Desktop/future_job/css/style.scss */
     .main_contianer .carousel .carousel-control-prev:hover, .main_contianer .carousel .carousel-control-next:hover {
       opacity: 1; }
-  /* line 280, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 287, /Users/SONG/Desktop/future_job/css/style.scss */
   .main_contianer .carousel .carousel-indicators {
     width: 930px;
     justify-content: left;
@@ -264,7 +271,7 @@ header {
     left: 50%;
     transform: translate3d(-50%, 0, 0);
     margin: 0; }
-    /* line 291, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 298, /Users/SONG/Desktop/future_job/css/style.scss */
     .main_contianer .carousel .carousel-indicators li {
       width: 40px;
       height: 55px;
@@ -275,22 +282,22 @@ header {
       background-color: rgba(255, 255, 255, 0);
       cursor: pointer;
       z-index: 1; }
-      /* line 301, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 308, /Users/SONG/Desktop/future_job/css/style.scss */
       .main_contianer .carousel .carousel-indicators li .num {
         font-family: 'Barlow Semi Condensed', sans-serif;
         font-size: 2.4rem;
         color: rgba(255, 255, 255, 0.6); }
-    /* line 308, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 315, /Users/SONG/Desktop/future_job/css/style.scss */
     .main_contianer .carousel .carousel-indicators .active {
       border-bottom: 3px solid #FF2570; }
-      /* line 311, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 318, /Users/SONG/Desktop/future_job/css/style.scss */
       .main_contianer .carousel .carousel-indicators .active span {
         color: white; }
-  /* line 318, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 325, /Users/SONG/Desktop/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item {
     background-color: #eee;
     height: 100vh; }
-    /* line 321, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 328, /Users/SONG/Desktop/future_job/css/style.scss */
     .main_contianer .carousel .carousel-inner .carousel-item .contents_common {
       width: 930px;
       margin: 0 auto;
@@ -301,7 +308,7 @@ header {
       bottom: auto;
       transform: translate3d(-50%, -50%, 0);
       display: inline-block; }
-      /* line 333, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 340, /Users/SONG/Desktop/future_job/css/style.scss */
       .main_contianer .carousel .carousel-inner .carousel-item .contents_common h1 {
         font-size: 2.2rem;
         font-weight: 700;
@@ -309,7 +316,7 @@ header {
         color: white;
         display: inline-block;
         vertical-align: middle; }
-      /* line 341, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 348, /Users/SONG/Desktop/future_job/css/style.scss */
       .main_contianer .carousel .carousel-inner .carousel-item .contents_common h5 {
         color: #FF2570;
         font-size: 0.8rem;
@@ -319,14 +326,14 @@ header {
         border-radius: 20px;
         margin-top: 15px;
         margin-left: 20px; }
-      /* line 351, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 358, /Users/SONG/Desktop/future_job/css/style.scss */
       .main_contianer .carousel .carousel-inner .carousel-item .contents_common p {
         font-size: 1.1rem;
         line-height: 32px;
         margin: 40px 0 0;
         color: rgba(255, 255, 255, 0.9);
         font-weight: 300; }
-    /* line 359, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 366, /Users/SONG/Desktop/future_job/css/style.scss */
     .main_contianer .carousel .carousel-inner .carousel-item .more {
       text-align: center;
       display: inline-block;
@@ -336,65 +343,65 @@ header {
       bottom: 5%;
       transform: translate3d(-50%, 0, 0);
       cursor: pointer; }
-      /* line 369, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 376, /Users/SONG/Desktop/future_job/css/style.scss */
       .main_contianer .carousel .carousel-inner .carousel-item .more a {
         text-decoration: none;
         color: rgba(255, 255, 255, 0.6); }
-        /* line 372, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 379, /Users/SONG/Desktop/future_job/css/style.scss */
         .main_contianer .carousel .carousel-inner .carousel-item .more a img {
           padding-top: 10px;
           opacity: 0.7; }
-      /* line 379, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 386, /Users/SONG/Desktop/future_job/css/style.scss */
       .main_contianer .carousel .carousel-inner .carousel-item .more:hover a {
         color: white; }
-        /* line 381, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 388, /Users/SONG/Desktop/future_job/css/style.scss */
         .main_contianer .carousel .carousel-inner .carousel-item .more:hover a img {
           opacity: 1; }
-  /* line 389, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 396, /Users/SONG/Desktop/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .main_banner_bg_common, .main_contianer .carousel .carousel-inner .carousel-item-01, .main_contianer .carousel .carousel-inner .carousel-item-02, .main_contianer .carousel .carousel-inner .carousel-item-03, .main_contianer .carousel .carousel-inner .carousel-item-04, .main_contianer .carousel .carousel-inner .carousel-item-05, .main_contianer .carousel .carousel-inner .carousel-item-06 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
-  /* line 395, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 402, /Users/SONG/Desktop/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-01 {
     background-image: url(../img/main_banner_01.jpg); }
-  /* line 399, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 406, /Users/SONG/Desktop/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-02 {
     background-image: url(../img/main_banner_02.jpg); }
-  /* line 403, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 410, /Users/SONG/Desktop/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-03 {
     background-image: url(../img/main_banner_03.jpg); }
-  /* line 407, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 414, /Users/SONG/Desktop/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-04 {
     background-image: url(../img/main_banner_01.jpg); }
-  /* line 411, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 418, /Users/SONG/Desktop/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-05 {
     background-image: url(../img/main_banner_02.jpg); }
-  /* line 415, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 422, /Users/SONG/Desktop/future_job/css/style.scss */
   .main_contianer .carousel .carousel-inner .carousel-item-06 {
     background-image: url(../img/main_banner_03.jpg); }
 
 /* detail page */
-/* line 428, /Users/SONG/Desktop/future_job/css/style.scss */
+/* line 435, /Users/SONG/Desktop/future_job/css/style.scss */
 .detail_contents {
   margin-top: 100px; }
-  /* line 430, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 437, /Users/SONG/Desktop/future_job/css/style.scss */
   .detail_contents .banner {
     height: 450px;
     background-image: url(../img/detail_banner.jpg);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover; }
-    /* line 436, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 443, /Users/SONG/Desktop/future_job/css/style.scss */
     .detail_contents .banner .container {
       padding: 60px 0;
       position: relative;
       height: 450px; }
-  /* line 443, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 450, /Users/SONG/Desktop/future_job/css/style.scss */
   .detail_contents .section .container {
     width: 1140px;
     margin: 0 auto; }
-    /* line 446, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 453, /Users/SONG/Desktop/future_job/css/style.scss */
     .detail_contents .section .container .num {
       display: inline-block;
       border-bottom: 4px solid #FF2570;
@@ -402,12 +409,12 @@ header {
       font-weight: 500;
       padding-bottom: 6px;
       font-family: 'Barlow Semi Condensed', sans-serif; }
-    /* line 454, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 461, /Users/SONG/Desktop/future_job/css/style.scss */
     .detail_contents .section .container .title {
       font-size: 2.3rem;
       font-weight: 700;
       margin: 100px 0 20px; }
-    /* line 459, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 466, /Users/SONG/Desktop/future_job/css/style.scss */
     .detail_contents .section .container .tag {
       display: inline-block;
       color: #FF2570;
@@ -415,18 +422,18 @@ header {
       border-radius: 20px;
       padding: 6px 10px;
       font-size: 0.8rem; }
-    /* line 467, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 474, /Users/SONG/Desktop/future_job/css/style.scss */
     .detail_contents .section .container .date {
       font-size: 0.9rem;
       display: inline-block;
       margin-left: 10px; }
-    /* line 472, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 479, /Users/SONG/Desktop/future_job/css/style.scss */
     .detail_contents .section .container .link_area {
       text-align: right;
       position: absolute;
       bottom: 60px;
       right: 0; }
-      /* line 477, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 484, /Users/SONG/Desktop/future_job/css/style.scss */
       .detail_contents .section .container .link_area .subscription {
         display: inline-block;
         font-size: 1rem;
@@ -438,37 +445,37 @@ header {
         margin-right: 25px;
         border-radius: 20px;
         cursor: pointer; }
-        /* line 489, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 496, /Users/SONG/Desktop/future_job/css/style.scss */
         .detail_contents .section .container .link_area .subscription:hover {
           background-color: #000;
           color: #fff; }
-      /* line 494, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 501, /Users/SONG/Desktop/future_job/css/style.scss */
       .detail_contents .section .container .link_area a {
         display: inline-block; }
-        /* line 496, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 503, /Users/SONG/Desktop/future_job/css/style.scss */
         .detail_contents .section .container .link_area a img {
           vertical-align: middle; }
-    /* line 501, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 508, /Users/SONG/Desktop/future_job/css/style.scss */
     .detail_contents .section .container .contents {
       line-height: 30px;
       font-size: 1rem;
       color: #000;
       margin: 50px 0; }
-    /* line 507, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 514, /Users/SONG/Desktop/future_job/css/style.scss */
     .detail_contents .section .container .good_btn_area {
       text-align: center;
       margin: 100px auto; }
-      /* line 510, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 517, /Users/SONG/Desktop/future_job/css/style.scss */
       .detail_contents .section .container .good_btn_area h5 {
         font-size: 0.9rem;
         color: #000; }
-      /* line 514, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 521, /Users/SONG/Desktop/future_job/css/style.scss */
       .detail_contents .section .container .good_btn_area .icon {
         margin: 40px 0; }
-        /* line 516, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 523, /Users/SONG/Desktop/future_job/css/style.scss */
         .detail_contents .section .container .good_btn_area .icon img {
           margin: 0 20px; }
-      /* line 520, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 527, /Users/SONG/Desktop/future_job/css/style.scss */
       .detail_contents .section .container .good_btn_area button {
         padding: 12px 25px;
         border-radius: 30px;
@@ -479,64 +486,64 @@ header {
         color: #000;
         font-size: 1rem;
         cursor: pointer; }
-        /* line 531, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 538, /Users/SONG/Desktop/future_job/css/style.scss */
         .detail_contents .section .container .good_btn_area button:hover {
           background-color: #000;
           color: white; }
-      /* line 536, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 543, /Users/SONG/Desktop/future_job/css/style.scss */
       .detail_contents .section .container .good_btn_area button.left {
         border: 2px solid #FF2570;
         color: #FF2570; }
-        /* line 540, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 547, /Users/SONG/Desktop/future_job/css/style.scss */
         .detail_contents .section .container .good_btn_area button.left:hover {
           background-color: #FF2570;
           color: white; }
 
-/* line 551, /Users/SONG/Desktop/future_job/css/style.scss */
+/* line 558, /Users/SONG/Desktop/future_job/css/style.scss */
 footer {
   background-color: #f1f1f1;
   height: 70px;
   line-height: 70px; }
-  /* line 555, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 562, /Users/SONG/Desktop/future_job/css/style.scss */
   footer .container {
     width: 1140px;
     margin: 0 auto; }
-    /* line 558, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 565, /Users/SONG/Desktop/future_job/css/style.scss */
     footer .container h5 {
       display: inline-block;
       font-size: 0.9rem; }
-    /* line 562, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 569, /Users/SONG/Desktop/future_job/css/style.scss */
     footer .container a {
       display: inline-block;
       float: right; }
-      /* line 565, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 572, /Users/SONG/Desktop/future_job/css/style.scss */
       footer .container a img {
         vertical-align: middle; }
 
-/* line 574, /Users/SONG/Desktop/future_job/css/style.scss */
+/* line 581, /Users/SONG/Desktop/future_job/css/style.scss */
 .modal {
   padding: 0 !important; }
-  /* line 576, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 583, /Users/SONG/Desktop/future_job/css/style.scss */
   .modal .modal-dialog {
     max-width: 100%;
     margin: 0; }
-    /* line 579, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 586, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog .modal-content {
       border-radius: 0;
       border: none; }
-      /* line 582, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 589, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog .modal-content .modal-body {
         padding: 0;
         width: 1140px;
         margin: 0 auto; }
-        /* line 588, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 595, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog .modal-content .modal-body .menu ul li {
           display: flex; }
-          /* line 590, /Users/SONG/Desktop/future_job/css/style.scss */
+          /* line 597, /Users/SONG/Desktop/future_job/css/style.scss */
           .modal .modal-dialog .modal-content .modal-body .menu ul li a {
             text-decoration: none;
             display: inline-block; }
-            /* line 593, /Users/SONG/Desktop/future_job/css/style.scss */
+            /* line 600, /Users/SONG/Desktop/future_job/css/style.scss */
             .modal .modal-dialog .modal-content .modal-body .menu ul li a .container {
               height: 150px;
               line-height: 150px;
@@ -545,13 +552,13 @@ footer {
               border-bottom: 1px solid #ddd;
               padding: 0;
               overflow: hidden; }
-              /* line 602, /Users/SONG/Desktop/future_job/css/style.scss */
+              /* line 609, /Users/SONG/Desktop/future_job/css/style.scss */
               .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .menu_title {
                 vertical-align: top;
                 height: 150px;
                 display: inline-block;
                 margin-left: 20px; }
-                /* line 607, /Users/SONG/Desktop/future_job/css/style.scss */
+                /* line 614, /Users/SONG/Desktop/future_job/css/style.scss */
                 .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .menu_title .num {
                   display: inline-block;
                   font-size: 40px;
@@ -561,14 +568,14 @@ footer {
                   letter-spacing: -2px;
                   font-family: 'Barlow Semi Condensed', sans-serif;
                   line-height: 50px; }
-                /* line 617, /Users/SONG/Desktop/future_job/css/style.scss */
+                /* line 624, /Users/SONG/Desktop/future_job/css/style.scss */
                 .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .menu_title .title {
                   display: inline-block;
                   color: #000;
                   font-size: 1.2rem;
                   margin-left: 20px;
                   line-height: 50px; }
-                  /* line 623, /Users/SONG/Desktop/future_job/css/style.scss */
+                  /* line 630, /Users/SONG/Desktop/future_job/css/style.scss */
                   .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .menu_title .title span.tag {
                     font-size: 0.7rem;
                     border: 1px solid #FF2570;
@@ -580,7 +587,7 @@ footer {
                     position: relative;
                     bottom: 2px;
                     margin: 0 0 0 15px; }
-              /* line 637, /Users/SONG/Desktop/future_job/css/style.scss */
+              /* line 644, /Users/SONG/Desktop/future_job/css/style.scss */
               .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area {
                 position: relative;
                 display: inline-block;
@@ -588,11 +595,11 @@ footer {
                 height: 150px;
                 width: 150px;
                 overflow: hidden; }
-                /* line 644, /Users/SONG/Desktop/future_job/css/style.scss */
+                /* line 651, /Users/SONG/Desktop/future_job/css/style.scss */
                 .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area img {
                   height: 150px;
                   position: relative; }
-                /* line 649, /Users/SONG/Desktop/future_job/css/style.scss */
+                /* line 656, /Users/SONG/Desktop/future_job/css/style.scss */
                 .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_common, .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_01, .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_02, .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_03, .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_04, .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_05, .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_06 {
                   width: 100%;
                   height: 100%;
@@ -600,29 +607,29 @@ footer {
                   background-position: center;
                   background-color: #ddd;
                   background-size: cover; }
-                /* line 658, /Users/SONG/Desktop/future_job/css/style.scss */
+                /* line 665, /Users/SONG/Desktop/future_job/css/style.scss */
                 .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_01 {
                   background-image: url(../img/main_banner_01.jpg); }
-                /* line 662, /Users/SONG/Desktop/future_job/css/style.scss */
+                /* line 669, /Users/SONG/Desktop/future_job/css/style.scss */
                 .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_02 {
                   background-image: url(../img/main_banner_02.jpg); }
-                /* line 666, /Users/SONG/Desktop/future_job/css/style.scss */
+                /* line 673, /Users/SONG/Desktop/future_job/css/style.scss */
                 .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_03 {
                   background-image: url(../img/main_banner_03.jpg); }
-                /* line 670, /Users/SONG/Desktop/future_job/css/style.scss */
+                /* line 677, /Users/SONG/Desktop/future_job/css/style.scss */
                 .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_04 {
                   background-image: url(../img/main_banner_01.jpg); }
-                /* line 674, /Users/SONG/Desktop/future_job/css/style.scss */
+                /* line 681, /Users/SONG/Desktop/future_job/css/style.scss */
                 .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_05 {
                   background-image: url(../img/main_banner_02.jpg); }
-                /* line 678, /Users/SONG/Desktop/future_job/css/style.scss */
+                /* line 685, /Users/SONG/Desktop/future_job/css/style.scss */
                 .modal .modal-dialog .modal-content .modal-body .menu ul li a .container .thumbnail_area .thumbnail_06 {
                   background-image: url(../img/main_banner_03.jpg); }
-              /* line 683, /Users/SONG/Desktop/future_job/css/style.scss */
+              /* line 690, /Users/SONG/Desktop/future_job/css/style.scss */
               .modal .modal-dialog .modal-content .modal-body .menu ul li a .container:hover {
                 background-color: #f1f1f1; }
 
-/* line 697, /Users/SONG/Desktop/future_job/css/style.scss */
+/* line 704, /Users/SONG/Desktop/future_job/css/style.scss */
 .modal-backdrop.show {
   opacity: 0; }
 
