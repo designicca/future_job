@@ -741,15 +741,20 @@ footer {
                     padding: 0;
                     .logo_area {
                         display: inline-block;
-                        img {
-                            vertical-align: middle;
-                        }
-                        img:nth-child(1) {
-                            width: 50px;
-                        }
-                        img:nth-child(2) {
-                            width: 96px;
-                            margin-left: 10px;
+                        a {
+                            display: inline-block;
+                            text-decoration: none;
+                        
+                            img {
+                                vertical-align: middle;
+                            }
+                            img:nth-child(1) {
+                                width: 50px;
+                            }
+                            img:nth-child(2) {
+                                width: 96px;
+                                margin-left: 10px;
+                            }
                         }
                     }
                     .close {
@@ -759,6 +764,12 @@ footer {
                         cursor: pointer;
                         width: 50px;
                         text-align: center;
+                        outline: 0;
+                        opacity: 0.7;
+                        @extend .transition2_pack;
+                        &:hover {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -810,6 +821,7 @@ footer {
                         }
                         input[type=submit] {
                             @extend .input_common;
+                            @extend .transition2_pack;
                             background-color: $main_color;
                             border-radius: 5px;
                             color: white;
@@ -819,7 +831,7 @@ footer {
                             vertical-align: middle;
                             margin-left: 10px;
                             cursor: pointer;
-                            @extend .transition2_pack;
+                            
                             &:hover {
                                 background-color: #D82167;
                             }
