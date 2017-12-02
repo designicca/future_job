@@ -501,7 +501,61 @@ header {
     }
 }
 
-
+@media only screen and (max-width: 500px) {
+    .main_contianer {
+        .carousel {
+            .carousel-control-prev, .carousel-control-next {    
+                display: none;
+            }
+            .carousel-indicators {
+                width: 100%;
+                transform: none;
+                top: 17%;
+                bottom: auto;
+                right: 0;
+                left: 0;
+                padding: 0 30px;
+                li {
+                    margin: 0 4%;
+                    width: 33px;
+                    height: 48px;
+                    line-height: normal;
+                    .num {
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .carousel-inner {
+                .carousel-item {
+                    width: 100%;
+                    padding: 0 55px;
+                    .contents_common {
+                        width: 100%;
+                        transform: none;
+                        top: 30%;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        h1 {
+                            font-size: 1.7rem;
+                            
+                        }
+                        h5 {
+                            margin: 10px 0; 
+                        }
+                        p {
+                            font-size: 0.85rem;
+                            line-height: 27px;
+                            br {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
