@@ -510,42 +510,43 @@ header {
             .carousel-indicators {
                 width: 100%;
                 transform: none;
-                top: 17%;
+                top: 20%;
                 bottom: auto;
                 right: 0;
                 left: 0;
                 padding: 0 30px;
                 li {
-                    margin: 0 4%;
+                    margin: 0 3.8%;
                     width: 33px;
-                    height: 48px;
+                    height: 40px;
                     line-height: normal;
                     .num {
-                        font-size: 1.8rem;
+                        font-size: 28px;
                     }
                 }
             }
             .carousel-inner {
                 .carousel-item {
                     width: 100%;
-                    padding: 0 55px;
+                    padding: 0 40px;
                     .contents_common {
                         width: 100%;
                         transform: none;
-                        top: 30%;
+                        top: 33%;
                         right: 0;
                         left: 0;
                         bottom: 0;
                         h1 {
-                            font-size: 1.7rem;
-                            
+                            font-size: 26px;
+                            display: block;
+                            line-height: 36px;
                         }
                         h5 {
                             margin: 10px 0; 
                         }
                         p {
-                            font-size: 0.85rem;
-                            line-height: 26px;
+                            font-size: 14px;
+                            line-height: 24px;
                             br {
                                 display: none;
                             }
@@ -553,7 +554,7 @@ header {
                     }
                     .more {
                         a {
-                            font-size: 0.8rem;
+                            font-size: 0.75rem;
                         }
                     }
                 }
