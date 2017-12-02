@@ -221,9 +221,12 @@ header {
 
 @media only screen and (max-width: 500px) {
     header {
+        height: 70px;
+        line-height: 70px;
+        
         .container {
             width: auto;
-            padding: 0 30px; 
+            padding: 0 20px; 
             .left {
                 a {
                     img:nth-child(1) {
@@ -232,6 +235,13 @@ header {
                     img:nth-child(2) {
                         width: 90px;
                         margin-left: 8px;
+                    }
+                }
+            }
+            .nav {
+                .trigger {
+                    img {
+                        vertical-align: middle;
                     }
                 }
             }
@@ -620,6 +630,7 @@ header {
 
 @media only screen and (max-width: 500px) {
     .detail_contents {
+        margin-top: 70px;
         .section {
             .container {
                 width: auto;
@@ -992,10 +1003,17 @@ footer {
         .modal-dialog-menu {
             .modal-content-menu {
                 .modal_menu_nav{
+                    height: 70px;
+                    line-height: 70px;
                     .modal_container {
                         width: 100%;
                         .logo_area {
                             margin-left: 20px;
+                        }
+                        .menu_modal_right {
+                            .close {
+                                height: 70px;
+                            }
                         }
                     }  
                 } 
@@ -1024,7 +1042,7 @@ footer {
                                                 margin-bottom: 5px;
                                             }
                                             .title {
-                                                font-size: 1rem;
+                                                font-size: 0.85rem;
                                                 margin-left: 0;
                                                 line-height: 20px;
                                                 span.tag {
