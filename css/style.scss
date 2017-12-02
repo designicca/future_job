@@ -521,7 +521,7 @@ header {
                     height: 48px;
                     line-height: normal;
                     .num {
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                     }
                 }
             }
@@ -545,10 +545,15 @@ header {
                         }
                         p {
                             font-size: 0.85rem;
-                            line-height: 27px;
+                            line-height: 26px;
                             br {
                                 display: none;
                             }
+                        }
+                    }
+                    .more {
+                        a {
+                            font-size: 0.8rem;
                         }
                     }
                 }
