@@ -126,6 +126,8 @@ header {
                 position: relative;
                 z-index: 3;
                 cursor: pointer;
+                width: 50px;
+                text-align: center;
             }
 
             .menu {
@@ -1084,10 +1086,76 @@ footer {
             }
         }
     }
+    .modal-dialog-share {
+        max-width: 800px;
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0) !important;
+        
+        .modal-content-share {
+            text-align: center;
+            padding: 70px 0;
+            position: relative;
+            .close {
+                cursor: pointer;
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                top: 20px;
+                right: 20px;
+                font-size: 2rem;
+            }
+            .modal-body {
+                padding: 0;
+                h1 {
+                    font-size: 24px;
+                    color: $main_black;
+                    font-weight: 700;
+                }
+                h5 {
+                    font-size: 1rem;
+                    color: $main_black;
+                    margin: 15px 0;
+                }
+                .sns_area {
+                    margin: 50px 0;
+                    
+                    a {
+                        text-decoration: none;
+                        display: inline-block;
+                        img {
+                            margin: 0 15px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+            .close_btn {
+                cursor: pointer;
+                width: 120px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                background-color: #969696;
+                color: white;
+                border-radius: 4px;
+                display: inline-block;
+                margin: 0 auto;
+                font-size: 0.9rem;
+                @extend .transition2_pack;
+                &:hover {
+                    background-color: #777;
+                }
+            }
+        }
+    }
 }
 
 .modal-backdrop.show {
-    opacity: 0;
+    //opacity: 0;
 }
 
 
@@ -1228,6 +1296,32 @@ footer {
                                 margin: 20px 0;
                                 height: 50px;
                                 line-height: 50px;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+        
+        .modal-dialog-share {
+            .modal-content-share {
+                height: 100vh;
+                border-radius: 0;
+                .modal-body {
+                    h1 {
+                        margin-top: 20px;
+                    }
+                    .sns_area {
+                        margin: 0;
+                        position: absolute;
+                        top: 55%;
+                        left: 50%;
+                        transform: translate3d(-50%, -50%, 0);
+                        a {
+                            display: block;
+                            img {
+                                margin: 20px 0;
+                                display: block;
                             }
                         }
                     }
