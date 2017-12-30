@@ -1025,40 +1025,47 @@ footer {
             font-size: 1.3rem;
             margin: 30px 0;
             line-height: 2rem; }
-          /* line 1156, /Users/SONG/Desktop/future_job/css/style.scss */
-          .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form h5 {
-            margin: 15px 0;
-            font-size: 0.85rem;
-            color: #777; }
-          /* line 1161, /Users/SONG/Desktop/future_job/css/style.scss */
-          .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form .input_common, .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=email], .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=submit] {
-            outline: 0;
-            height: 60px;
-            line-height: 60px;
-            font-size: 0.9rem; }
-          /* line 1168, /Users/SONG/Desktop/future_job/css/style.scss */
-          .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=email] {
-            border: 2px solid #FF2570;
-            border-radius: 5px;
-            padding: 0 17px;
-            color: #000;
-            background-color: white;
-            width: 400px; }
-          /* line 1177, /Users/SONG/Desktop/future_job/css/style.scss */
-          .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=submit] {
-            background-color: #FF2570;
-            border-radius: 5px;
-            color: white;
-            border: 0;
-            text-align: center;
-            width: 100px;
-            vertical-align: middle;
-            margin-left: 10px;
-            cursor: pointer; }
-            /* line 1190, /Users/SONG/Desktop/future_job/css/style.scss */
-            .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=submit]:hover {
-              background-color: #D82167; }
-  /* line 1199, /Users/SONG/Desktop/future_job/css/style.scss */
+          /* line 1155, /Users/SONG/Desktop/future_job/css/style.scss */
+          .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form {
+            margin-top: 40px; }
+            /* line 1157, /Users/SONG/Desktop/future_job/css/style.scss */
+            .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form h5 {
+              margin: 15px 0;
+              font-size: 0.85rem;
+              color: #777; }
+            /* line 1162, /Users/SONG/Desktop/future_job/css/style.scss */
+            .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form .input_common, .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=email], .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=text], .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=submit] {
+              outline: 0;
+              height: 60px;
+              line-height: 60px;
+              font-size: 0.9rem; }
+            /* line 1169, /Users/SONG/Desktop/future_job/css/style.scss */
+            .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=email], .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=text] {
+              border: 1px solid #bbb;
+              border-radius: 5px;
+              padding: 0 17px;
+              color: #000;
+              background-color: white;
+              width: 400px;
+              margin-bottom: 15px;
+              display: block; }
+            /* line 1180, /Users/SONG/Desktop/future_job/css/style.scss */
+            .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=email] {
+              border: 2px solid #FF2570; }
+            /* line 1183, /Users/SONG/Desktop/future_job/css/style.scss */
+            .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=submit] {
+              background-color: #FF2570;
+              border-radius: 5px;
+              color: white;
+              border: 0;
+              text-align: center;
+              width: 100px;
+              vertical-align: middle;
+              cursor: pointer; }
+              /* line 1196, /Users/SONG/Desktop/future_job/css/style.scss */
+              .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=submit]:hover {
+                background-color: #D82167; }
+  /* line 1205, /Users/SONG/Desktop/future_job/css/style.scss */
   .modal .modal-dialog-share {
     max-width: 800px;
     margin: 0;
@@ -1066,12 +1073,12 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0) !important; }
-    /* line 1207, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 1213, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog-share .modal-content-share {
       text-align: center;
       padding: 70px 0;
       position: relative; }
-      /* line 1211, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 1217, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-share .modal-content-share .close {
         cursor: pointer;
         position: absolute;
@@ -1081,31 +1088,31 @@ footer {
         top: 20px;
         right: 20px;
         font-size: 2rem; }
-      /* line 1221, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 1227, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-share .modal-content-share .modal-body {
         padding: 0; }
-        /* line 1223, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1229, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-share .modal-content-share .modal-body h1 {
           font-size: 24px;
           color: #000;
           font-weight: 700; }
-        /* line 1228, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1234, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-share .modal-content-share .modal-body h5 {
           font-size: 1rem;
           color: #000;
           margin: 15px 0; }
-        /* line 1233, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1239, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-share .modal-content-share .modal-body .sns_area {
           margin: 50px 0; }
-          /* line 1236, /Users/SONG/Desktop/future_job/css/style.scss */
+          /* line 1242, /Users/SONG/Desktop/future_job/css/style.scss */
           .modal .modal-dialog-share .modal-content-share .modal-body .sns_area a {
             text-decoration: none;
             display: inline-block; }
-            /* line 1239, /Users/SONG/Desktop/future_job/css/style.scss */
+            /* line 1245, /Users/SONG/Desktop/future_job/css/style.scss */
             .modal .modal-dialog-share .modal-content-share .modal-body .sns_area a img {
-              margin: 0 15px;
+              margin: 15px;
               vertical-align: middle; }
-      /* line 1246, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 1252, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-share .modal-content-share .close_btn {
         cursor: pointer;
         width: 120px;
@@ -1118,147 +1125,150 @@ footer {
         display: inline-block;
         margin: 0 auto;
         font-size: 0.9rem; }
-        /* line 1259, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1265, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-share .modal-content-share .close_btn:hover {
           background-color: #777; }
 
 @media only screen and (max-width: 500px) {
-  /* line 1277, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 1283, /Users/SONG/Desktop/future_job/css/style.scss */
   .modal .modal-dialog-menu .modal-content-menu .modal_menu_nav {
     height: 70px;
     line-height: 70px; }
-    /* line 1280, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 1286, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog-menu .modal-content-menu .modal_menu_nav .modal_container {
       width: 100%; }
-      /* line 1282, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 1288, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-menu .modal-content-menu .modal_menu_nav .modal_container .logo_area {
         margin-left: 20px; }
-        /* line 1285, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1291, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-menu .modal-content-menu .modal_menu_nav .modal_container .logo_area a img:nth-child(1) {
           width: 40px; }
-        /* line 1289, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1295, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-menu .modal-content-menu .modal_menu_nav .modal_container .logo_area a img:nth-child(2) {
           width: 90px;
           margin-left: 8px; }
-      /* line 1296, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 1302, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-menu .modal-content-menu .modal_menu_nav .modal_container .menu_modal_right .close {
         height: 70px; }
-      /* line 1299, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 1305, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-menu .modal-content-menu .modal_menu_nav .modal_container .menu_modal_right .subscription_btn {
         margin-right: 5px; }
-        /* line 1301, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1307, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-menu .modal-content-menu .modal_menu_nav .modal_container .menu_modal_right .subscription_btn h3 {
           font-size: 0.8rem;
           width: 85px;
           border: 1px solid #FF2570; }
-  /* line 1310, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 1316, /Users/SONG/Desktop/future_job/css/style.scss */
   .modal .modal-dialog-menu .modal-content-menu .modal-body {
     width: 100%; }
-    /* line 1315, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 1321, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog-menu .modal-content-menu .modal-body .menu ul li a {
       width: 100%; }
-      /* line 1317, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 1323, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-menu .modal-content-menu .modal-body .menu ul li a .container {
         width: 100%;
         line-height: inherit;
         height: 100px; }
-        /* line 1321, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1327, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-menu .modal-content-menu .modal-body .menu ul li a .container .menu_title {
           height: auto;
           width: 60%;
           position: relative;
           top: 50%;
           transform: translate3d(0, -50%, 0); }
-          /* line 1327, /Users/SONG/Desktop/future_job/css/style.scss */
+          /* line 1333, /Users/SONG/Desktop/future_job/css/style.scss */
           .modal .modal-dialog-menu .modal-content-menu .modal-body .menu ul li a .container .menu_title .num {
             display: block;
             font-size: 1.7rem;
             letter-spacing: 0;
             line-height: inherit;
             margin-bottom: 5px; }
-          /* line 1334, /Users/SONG/Desktop/future_job/css/style.scss */
+          /* line 1340, /Users/SONG/Desktop/future_job/css/style.scss */
           .modal .modal-dialog-menu .modal-content-menu .modal-body .menu ul li a .container .menu_title .title {
             font-size: 0.85rem;
             margin-left: 0;
             line-height: 20px; }
-            /* line 1338, /Users/SONG/Desktop/future_job/css/style.scss */
+            /* line 1344, /Users/SONG/Desktop/future_job/css/style.scss */
             .modal .modal-dialog-menu .modal-content-menu .modal-body .menu ul li a .container .menu_title .title span.tag {
               display: none; }
-        /* line 1343, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1349, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-menu .modal-content-menu .modal-body .menu ul li a .container .thumbnail_area {
           width: 100px;
           height: 100px; }
-  /* line 1357, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 1363, /Users/SONG/Desktop/future_job/css/style.scss */
   .modal .modal-dialog-subscription .modal-content-subscription .modal_nav {
     height: 70px;
     line-height: 70px; }
-    /* line 1360, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 1366, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog-subscription .modal-content-subscription .modal_nav .modal_container {
       width: 100%; }
-      /* line 1362, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 1368, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-subscription .modal-content-subscription .modal_nav .modal_container .logo_area {
         margin-left: 20px; }
-        /* line 1365, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1371, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-subscription .modal-content-subscription .modal_nav .modal_container .logo_area a img:nth-child(1) {
           width: 40px; }
-        /* line 1369, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1375, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-subscription .modal-content-subscription .modal_nav .modal_container .logo_area a img:nth-child(2) {
           width: 90px;
           margin-left: 8px; }
-      /* line 1375, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 1381, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-subscription .modal-content-subscription .modal_nav .modal_container .close {
         height: 70px; }
-  /* line 1381, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 1387, /Users/SONG/Desktop/future_job/css/style.scss */
   .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants {
     width: 100%;
     padding: 0 30px;
     transform: none;
     top: 17%;
     left: 0; }
-    /* line 1387, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 1393, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants h1 {
       font-size: 1.5rem;
       line-height: 2.5rem; }
-    /* line 1391, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 1397, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants h3 {
       font-size: 1.1rem;
       line-height: 2rem;
       margin: 20px 0;
       width: 70%; }
-    /* line 1397, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 1403, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form {
-      margin-top: 30px; }
-      /* line 1399, /Users/SONG/Desktop/future_job/css/style.scss */
-      .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=email] {
-        width: 100%;
-        height: 50px;
-        line-height: 50px;
-        box-shadow: none; }
+      margin-top: 40px; }
       /* line 1405, /Users/SONG/Desktop/future_job/css/style.scss */
+      .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=email], .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=text] {
+        width: 80%;
+        height: 60px;
+        line-height: 60px;
+        box-shadow: none; }
+      /* line 1411, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-subscription .modal-content-subscription .modal-body .contants .input_form input[type=submit] {
         margin: 20px 0;
         height: 50px;
         line-height: 50px; }
-  /* line 1417, /Users/SONG/Desktop/future_job/css/style.scss */
+  /* line 1423, /Users/SONG/Desktop/future_job/css/style.scss */
   .modal .modal-dialog-share .modal-content-share {
     height: 100vh;
     border-radius: 0; }
-    /* line 1421, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 1427, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog-share .modal-content-share .modal-body h1 {
       margin-top: 20px; }
-    /* line 1424, /Users/SONG/Desktop/future_job/css/style.scss */
+    /* line 1430, /Users/SONG/Desktop/future_job/css/style.scss */
     .modal .modal-dialog-share .modal-content-share .modal-body .sns_area {
       margin: 0;
       position: absolute;
       top: 55%;
       left: 50%;
       transform: translate3d(-50%, -50%, 0); }
-      /* line 1430, /Users/SONG/Desktop/future_job/css/style.scss */
+      /* line 1436, /Users/SONG/Desktop/future_job/css/style.scss */
       .modal .modal-dialog-share .modal-content-share .modal-body .sns_area a {
         display: block; }
-        /* line 1432, /Users/SONG/Desktop/future_job/css/style.scss */
+        /* line 1438, /Users/SONG/Desktop/future_job/css/style.scss */
         .modal .modal-dialog-share .modal-content-share .modal-body .sns_area a img {
           margin: 20px 0;
-          display: block; } }
+          display: block; }
+      /* line 1443, /Users/SONG/Desktop/future_job/css/style.scss */
+      .modal .modal-dialog-share .modal-content-share .modal-body .sns_area br {
+        display: none; } }
 
 /*# sourceMappingURL=style.css.map */
