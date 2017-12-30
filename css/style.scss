@@ -468,36 +468,55 @@ header {
                     }
                 }
             }
-            
-            .main_banner_bg_common {
-                background-repeat: no-repeat;
-                background-position: center;
+                        
+            .carousel-item-01 {
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(../img/main_banner_01.jpg) 
+                    no-repeat 
+                    center;
                 background-size: cover;
             }
             
-            .carousel-item-01 {
-                @extend .main_banner_bg_common;
-                background-image: url(../img/main_banner_01.jpg);
-            }
             .carousel-item-02 {
-                @extend .main_banner_bg_common;
-                background-image: url(../img/main_banner_02.jpg);
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(../img/main_banner_02.jpg) 
+                    no-repeat 
+                    center;
+                background-size: cover;
             }
             .carousel-item-03 {
-                @extend .main_banner_bg_common;
-                background-image: url(../img/main_banner_03.jpg);
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(../img/main_banner_03.jpg) 
+                    no-repeat 
+                    center;
+                background-size: cover;
             }
             .carousel-item-04 {
-                @extend .main_banner_bg_common;
-                background-image: url(../img/main_banner_01.jpg);
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(../img/main_banner_01.jpg) 
+                    no-repeat 
+                    center;
+                background-size: cover;
             }
             .carousel-item-05 {
-                @extend .main_banner_bg_common;
-                background-image: url(../img/main_banner_02.jpg);
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(../img/main_banner_02.jpg) 
+                    no-repeat 
+                    center;
+                background-size: cover;
             }
             .carousel-item-06 {
-                @extend .main_banner_bg_common;
-                background-image: url(../img/main_banner_03.jpg);
+                background: 
+                    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                    url(../img/main_banner_03.jpg) 
+                    no-repeat 
+                    center;
+                background-size: cover;
             }
         }
     }
