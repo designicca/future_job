@@ -23,10 +23,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
     line-height: 1;
     font-family: 'NanumSquare', sans-serif;
-    //font-family: 'Barlow Semi Condensed', sans-serif;
     overflow-x: hidden;
 }
-
 ol, ul {
     list-style: none;
 }
@@ -49,7 +47,7 @@ table {
 }
 /* RESET END */
 
-
+/* variable */
 $main_color: #FF2570;
 $main_black: #000;
 
@@ -70,6 +68,29 @@ $transition2: all 0.2s ease-out;
             transition: $transition3;
 }
 
+$transform_3d_x_y: translate3d(-50%, -50%, 0);
+.transform_3d_x_y {
+    -webkit-transform: $transform_3d_x_y;
+       -moz-transform: $transform_3d_x_y;
+         -o-transform: $transform_3d_x_y;
+            transform: $transform_3d_x_y;
+}
+
+$transform_3d_x: translate3d(-50%, 0, 0);
+.transform_3d_x {
+    -webkit-transform: $transform_3d_x;
+       -moz-transform: $transform_3d_x;
+         -o-transform: $transform_3d_x;
+            transform: $transform_3d_x;
+}
+
+$transform_3d_y: translate3d(0, -50%, 0);
+.transform_3d_y {
+    -webkit-transform: $transform_3d_y;
+       -moz-transform: $transform_3d_y;
+         -o-transform: $transform_3d_y;
+            transform: $transform_3d_y;
+}
 
 ::selection {
   background: #FF2570;
@@ -77,25 +98,18 @@ $transition2: all 0.2s ease-out;
   text-shadow: none;
 }
 
-::-webkit-scrollbar {
-    //position: absolute;
-    //right: 0;
-    //top: 0;
-    //bottom: 0;
-}
 
 .detail_header {
     background-color: white;
     border-bottom: 1px solid #eee;
 }
 header {
-    height: 100px;
-    line-height: 100px;
-    //background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    height: 100px;
+    line-height: 100px;
     z-index: 10;
     .container {
         width: 1140px;
@@ -108,14 +122,13 @@ header {
                 text-decoration: none;
                 img {
                     vertical-align: middle;
-
                 }
                 img:nth-child(1) {
                     width: 50px;
                 }
                 img:nth-child(2) {
-                    margin-left: 10px;
                     width: 96px;
+                    margin-left: 10px;
                 }
             }
         }
@@ -124,14 +137,12 @@ header {
             float: right;
             .trigger {
                 position: relative;
-                z-index: 3;
-                cursor: pointer;
                 width: 50px;
                 text-align: center;
+                cursor: pointer;
+                z-index: 3;
             }
-
             .menu {
-                background: rgba(0, 0, 0, 0.85);
                 background-color: white;
                 border-top: 1px solid #ddd;
                 height: 100%;
@@ -148,12 +159,12 @@ header {
                     width: 100%;
                     li {
                         $menu_height: 150px;
-                        //height: 15vh;
-                        //line-height: 15vh;
-                        height: $menu_height;
-                        line-height: $menu_height;
+                        
                         display: block;
                         overflow: hidden;
+                        height: $menu_height;
+                        line-height: $menu_height;
+                        
                         a {
                             text-decoration: none;
                             display: block;
@@ -163,32 +174,33 @@ header {
                                 border-bottom: 1px solid #ddd;
                                 height: $menu_height;
                                 @extend .transition2_pack;
+                                
                                 .num {
-                                    //line-height: 22px;
                                     display: inline-block;
-                                    font-size: 40px;
                                     vertical-align: middle;
+                                    margin-left: 15px;
                                     color: #444;
+                                    font-size: 40px;
                                     font-weight: 100;
                                     letter-spacing: -2px;
-                                    margin-left: 15px;
                                 }
                                 .title {
                                     display: inline-block;
+                                    margin-left: 20px;
                                     color: $main_black;
                                     font-size: 1.2rem;
-                                    margin-left: 20px;
+                                    
                                     span.tag {
-                                        font-size: 0.7rem;
-                                        border: 1px solid $main_color;
-                                        color: $main_color;
-                                        padding: 4px 10px;
-                                        border-radius: 15px;
-                                        letter-spacing: 0;
-                                        vertical-align: middle;
                                         position: relative;
                                         bottom: 2px;
                                         margin: 0 0 0 15px;
+                                        padding: 4px 10px;
+                                        border: 1px solid $main_color;
+                                        border-radius: 15px;
+                                        vertical-align: middle;
+                                        color: $main_color;
+                                        font-size: 0.7rem;
+                                        letter-spacing: 0;
                                     }
                                 }
                                 .thumbnail {
@@ -202,11 +214,10 @@ header {
                                         height: $menu_height;
                                         position: absolute;
                                         top: 50%;
-
                                         right: auto;
                                         bottom: auto;
                                         left: 50%;
-                                        transform: translate3d(-50%, -50%, 0);
+                                        @extend .transform_3d_x_y;
                                     }
                                 }
                                 &:hover {
@@ -269,8 +280,9 @@ header {
         width: 1140px;
         margin: 0 auto;
         position: relative;
-        top: 50%;
-        transform: translate3d(0, -50%, 0);
+        top: 50%; 
+        @extend .transform_3d_y;
+        
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
@@ -287,21 +299,22 @@ header {
         position: absolute;
         bottom: 10%;
         left: 50%;
-        transform: translate3d(-50%, 0, 0);
+        @extend .transform_3d_x;
+        
         a.start-btn {
-            text-decoration: none;
-            border: 2px solid $main_color;
-            width: 150px;
-            text-align: center;
+            float: right;
             display: inline-block;
+            text-decoration: none;
+            width: 150px;
             height: 55px;
             line-height: 55px;
-            font-size: 1.3rem;
-            font-weight: 700;
+            border: 2px solid $main_color;
             border-radius: 7px;
             color: $main_color;
             background-color: white;
-            float: right;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 700;
             @extend .transition2_pack;
             &:hover {
                 background-color: $main_color;
@@ -315,9 +328,9 @@ header {
     .background_area {
         .container {
             width: 100%;
-            padding: 0 30px;
             transform: none;
             top: 17%;
+            padding: 0 30px;
             h1 {
                 font-size: 1.5rem;
                 line-height: 2.5rem;
@@ -345,8 +358,6 @@ header {
 }
 
 
-
-
 .main_contianer {
     position: relative;
     .carousel {
@@ -365,10 +376,10 @@ header {
             bottom: auto;
             right: 0;
             left: 50%;
-            transform: translate3d(-50%, 0, 0);
             margin: 0;
-            
             @extend .transition2_pack;
+            @extend .transform_3d_x;
+            
             li {
                 width: 40px;
                 height: 55px;
@@ -382,7 +393,6 @@ header {
                 .num {
                     font-family: 'Barlow Semi Condensed', sans-serif;
                     font-size: 2.4rem;
-                    //letter-spacing: -3px;
                     color: rgba(255,255,255,0.6);
                 }
             }
@@ -395,21 +405,20 @@ header {
             }
         }
         .carousel-inner {
-            //height: 100%;
             .carousel-item {
                 background-color: #eee;
                 height: 100vh;
                 .contents_common {
+                    display: inline-block;
                     width: 930px;
-                    //height: 250px;
                     margin: 0 auto;
                     position: relative;
                     top: 50%;
                     left: 50%;
                     right: auto;
                     bottom: auto;
-                    transform: translate3d(-50%, -50%, 0);
-                    display: inline-block;
+                    @extend .transform_3d_x_y;
+                    
                     a {
                         text-decoration: none;
                     }
@@ -422,21 +431,21 @@ header {
                         vertical-align: middle;
                     }
                     h5 {
-                        color: $main_color;
-                        font-size: 0.8rem;
-                        padding: 6px 10px;
-                        border: 1px solid $main_color;
                         display: inline-block;
-                        border-radius: 20px;
                         margin-top: 15px;
                         margin-left: 20px;
+                        padding: 6px 10px;
+                        border: 1px solid $main_color;
+                        border-radius: 20px;
+                        color: $main_color;
+                        font-size: 0.8rem;
                     }
                     p {
                         font-size: 1.1rem;
+                        font-weight: 300;
                         line-height: 32px;
                         margin: 40px 0 0;
                         color: rgba(255,255,255,0.9);
-                        font-weight: 300;
                     }
                 }
                 .more {
@@ -446,9 +455,10 @@ header {
                     position: absolute;
                     left: 50%;
                     bottom: 5%;
-                    transform: translate3d(-50%, 0, 0);
                     cursor: pointer;
                     @extend .transition2_pack;
+                    @extend .transform_3d_x;
+                    
                     a {
                         text-decoration: none;
                         color: rgba(255,255,255,0.6);
@@ -681,9 +691,7 @@ header {
                     img {
                         display: block;
                         margin: 0 auto 10px;
-                    }
-                
-                
+                    }                
                     button {
                         padding: 12px 25px;
                         border-radius: 30px;
@@ -855,7 +863,6 @@ header {
                                     text-align: left;
                                     font-size: 0.8rem;
                                 }
-                                
                             }
                         }
                     }
@@ -864,8 +871,6 @@ header {
         }
     }
 }
-
-
 
 footer {
     background-color: #f1f1f1;
@@ -897,7 +902,6 @@ footer {
     }
 }
 
-
 .modal {
     padding: 0 !important;
     .modal-dialog-menu {
@@ -906,7 +910,6 @@ footer {
         .modal-content-menu {
             border-radius: 0;
             border: none;
-            //height: 100vh;
             .modal_menu_nav {
                 display: inline-block;
                 height: 100px;
@@ -934,7 +937,6 @@ footer {
                     .menu_modal_right {
                         display: inline-block;
                         float: right;
-                        
                         .subscription_btn {
                             display: inline-block;
                             cursor: pointer;
@@ -1033,7 +1035,6 @@ footer {
                                             height: 150px;
                                             position: relative;
                                         }
-                                        
                                         .thumbnail_common {
                                             width: 100%;
                                             height: 100%; 
@@ -1042,7 +1043,6 @@ footer {
                                             background-color: #ddd;
                                             background-size: cover;
                                         }
-                                        
                                         .thumbnail_01 {
                                             @extend .thumbnail_common;
                                             background-image: url(../img/main_banner_01.jpg);
@@ -1073,7 +1073,6 @@ footer {
                                     }
                                 }
                             }
-
                             a:link, a:visited, a:hover, a:active, a:hover {
                                 .container {
                                     .menu_title {
@@ -1092,7 +1091,6 @@ footer {
             }
         }
     }
-    
     
     .modal-dialog-subscription {
         max-width: 100%;
@@ -1118,7 +1116,6 @@ footer {
                         a {
                             display: inline-block;
                             text-decoration: none;
-                        
                             img {
                                 vertical-align: middle;
                             }
@@ -1160,7 +1157,8 @@ footer {
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate3d(-50%, -50%, 0);
+                    @extend .transform_3d_x_y;
+                    
                     h1 {
                         font-size: 2rem;
                         font-weight: 700;
@@ -1226,8 +1224,8 @@ footer {
         margin: 0;
         position: relative;
         top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0) !important;
+        left: 50%;        
+        @extend .transform_3d_x_y !important;
         
         .modal-content-share {
             text-align: center;
@@ -1289,11 +1287,6 @@ footer {
     }
 }
 
-.modal-backdrop.show {
-    //opacity: 0;
-}
-
-
 
 @media only screen and (max-width: 500px) {
     .modal {
@@ -1348,7 +1341,8 @@ footer {
                                             width: 60%;
                                             position: relative;
                                             top: 50%;
-                                            transform: translate3d(0, -50%, 0);
+                                            @extend .transform_3d_y;
+                                            
                                             .num {
                                                 display: block;
                                                 font-size: 1.7rem;
@@ -1451,7 +1445,8 @@ footer {
                         position: absolute;
                         top: 55%;
                         left: 50%;
-                        transform: translate3d(-50%, -50%, 0);
+                        @extend .transform_3d_x_y;
+                        
                         a {
                             display: block;
                             img {
@@ -1468,4 +1463,3 @@ footer {
         }
     }
 }
-
