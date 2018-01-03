@@ -53,6 +53,9 @@ $main_black: #000;
 
 $transition3: all 0.3s ease-out;
 $transition2: all 0.2s ease-out;
+$transform_x_y: translate3d(-50%, -50%, 0);
+$transform_x: translate3d(-50%, 0, 0);
+$transform_y: translate3d(0, -50%, 0);
 
 .transition2_pack {
     -webkit-transition: $transition2;
@@ -68,28 +71,25 @@ $transition2: all 0.2s ease-out;
             transition: $transition3;
 }
 
-$transform_3d_x_y: translate3d(-50%, -50%, 0);
 .transform_3d_x_y {
-    -webkit-transform: $transform_3d_x_y;
-       -moz-transform: $transform_3d_x_y;
-         -o-transform: $transform_3d_x_y;
-            transform: $transform_3d_x_y;
+    -webkit-transform: $transform_x_y;
+       -moz-transform: $transform_x_y;
+         -o-transform: $transform_x_y;
+            transform: $transform_x_y;
 }
 
-$transform_3d_x: translate3d(-50%, 0, 0);
 .transform_3d_x {
-    -webkit-transform: $transform_3d_x;
-       -moz-transform: $transform_3d_x;
-         -o-transform: $transform_3d_x;
-            transform: $transform_3d_x;
+    -webkit-transform: $transform_x;
+       -moz-transform: $transform_x;
+         -o-transform: $transform_x;
+            transform: $transform_x;
 }
 
-$transform_3d_y: translate3d(0, -50%, 0);
 .transform_3d_y {
-    -webkit-transform: $transform_3d_y;
-       -moz-transform: $transform_3d_y;
-         -o-transform: $transform_3d_y;
-            transform: $transform_3d_y;
+    -webkit-transform: $transform_y;
+       -moz-transform: $transform_y;
+         -o-transform: $transform_y;
+            transform: $transform_y;
 }
 
 ::selection {
@@ -594,17 +594,20 @@ header {
     }
 }
 
-
-
 /* detail page */
 .detail_contents {
     margin-top: 100px;
     .banner {
-        height: 450px;
-        background-image: url(../img/detail_banner.jpg);
-        background-position: top center;
-        background-repeat: no-repeat;
+        height: 450px;        
+        background: 
+            linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+            url(../img/detail_banner.jpg) 
+            no-repeat 
+            center;
         background-size: cover;
+        
+        
+        
         .container {
             padding: 60px 0;
             position: relative;
@@ -1188,6 +1191,7 @@ footer {
                         
                         input[type=email], input[type=text] {
                             @extend .input_common;
+                            @extend .transition2_pack;
                             border: 1px solid #bbb;
                             border-radius: 5px;
                             padding: 0 17px;
@@ -1196,10 +1200,11 @@ footer {
                             width: 400px;
                             margin-bottom: 15px;
                             display: block;
+                            &:focus {
+                                border: 2px solid $main_color;
+                            }
                         }
-                        input[type=email] {
-                            border: 2px solid $main_color;
-                        }
+                        
                         input[type=submit] {
                             @extend .input_common;
                             @extend .transition2_pack;
@@ -1228,7 +1233,8 @@ footer {
         position: relative;
         top: 50%;
         left: 50%;
-        @extend .transform_3d_x_y !important;
+        transform: translate3d(-50%, -50%, 0) !important;
+        
         
         .modal-content-share {
             text-align: center;
@@ -1344,7 +1350,11 @@ footer {
                                             width: 60%;
                                             position: relative;
                                             top: 50%;
-                                            @extend .transform_3d_y;
+                                            -webkit-transform: translate3d(0, -50%, 0);
+                                               -moz-transform: translate3d(0, -50%, 0);
+                                                 -o-transform: translate3d(0, -50%, 0);
+                                                    transform: translate3d(0, -50%, 0);
+                                            
                                             
                                             .num {
                                                 display: block;
@@ -1448,7 +1458,11 @@ footer {
                         position: absolute;
                         top: 55%;
                         left: 50%;
-                        @extend .transform_3d_x_y;
+                   
+                        -webkit-transform: translate3d(-50%, -50%, 0);
+                           -moz-transform: translate3d(-50%, -50%, 0);
+                             -o-transform: translate3d(-50%, -50%, 0);
+                                transform: translate3d(-50%, -50%, 0);
                         a {
                             display: block;
                             text-decoration: none;
